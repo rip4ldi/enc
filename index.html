@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Caesar Cipher Encrypter & Decrypter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Caesar Cipher Encrypter & Decrypter</h1>
+    <div class="section">
+      <h2>Message Encrypter</h2>
+      <textarea id="encrypt-input" placeholder="Enter your message"></textarea>
+      <label for="encrypt-algorithm">Select an encryption algorithm:</label>
+      <select id="encrypt-algorithm" class="styled-select">
+        <option value="caesar">Caesar Cipher</option>
+        <option value="algorithm2">Algorithm 2</option>
+        <option value="algorithm3">Algorithm 3</option>
+        <option value="algorithm4">Algorithm 4</option>
+      </select>
+      <button id="encrypt-button" class="encrypt">Encrypt</button>
+      <div id="encrypted-output" class="output"></div>
+      <button id="encrypt-copy-button" class="copy-button">Copy</button>
+    </div>
+
+    <div class="section">
+      <h2>Message Decrypter</h2>
+      <textarea id="decrypt-input" placeholder="Enter the encrypted message"></textarea>
+      <label for="decrypt-algorithm">Select a decryption algorithm:</label>
+      <select id="decrypt-algorithm" class="styled-select">
+        <option value="caesar">Caesar Cipher</option>
+        <option value="algorithm2">Algorithm 2</option>
+        <option value="algorithm3">Algorithm 3</option>
+        <option value="algorithm4">Algorithm 4</option>
+      </select>
+      <button id="decrypt-button" class="decrypt">Decrypt</button>
+      <div id="decrypted-output" class="output"></div>
+      <button id="decrypt-copy-button" class="copy-button">Copy</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrsasign/10.6.0/jsrsasign-all-min.js"></script>
+</body>
+</html>
